@@ -1,0 +1,7 @@
+{
+  "name": "Fincalz",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
