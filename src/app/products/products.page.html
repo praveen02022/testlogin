@@ -23,138 +23,101 @@
 
       </ion-col>
     </ion-row>
+  </ion-grid>
 
+  <!-- category -->
 
-    <!-- category -->
-    <ion-row>
-      <ion-col size="9">
+  <ion-row class="ion-justify-content-between">
+    <ion-col size="3">
+      <div>
         <p class="ion-margin-start">category</p>
-      </ion-col>
-      <ion-col size="3">
+      </div>
+    </ion-col>
+    <ion-col size="3">
+      <div>
+   
         <p>
           <ion-icon name="chevron-forward-circle" class="ion-float-right "></ion-icon>
         </p>
-      </ion-col>
-    </ion-row>
 
-    <!-- ion-chips -->
+      </div>
+    </ion-col>
+  </ion-row>
+  <!-- ion-chips -->
 
-    <div class="ion-padding-horizontal">
-      <ion-chip style="background: #c3c3d5;">
-        <ion-label color="primary">All</ion-label>
-      </ion-chip>
-      <ion-chip style="background: #fff; color: #6f707d;">
-        <ion-label>Dairy Products</ion-label>
-      </ion-chip>
-      <ion-chip style="background: #fff; color: #6f707d;">
-        <ion-label>Fruits</ion-label>
-      </ion-chip>
-      <!-- <ion-chip style="background: #fff; color: #6f707d;">
-        <ion-label>Hand-picked</ion-label>
-      </ion-chip> -->
-      <!-- <ion-chip style="background: #fff; color: #6f707d;">
-        <ion-label>Others</ion-label>
-      </ion-chip> -->
+  <div class="ion-padding-horizontal">
+    <ion-chip style="background: #c3c3d5;">
+      <ion-label color="primary">All</ion-label>
+    </ion-chip>
+    <ion-chip style="background: #fff; color: #6f707d;">
+      <ion-label>Dairy Products</ion-label>
+    </ion-chip>
+    <ion-chip style="background: #fff; color: #6f707d;">
+      <ion-label>Fruits</ion-label>
+    </ion-chip>
+    <!-- <ion-chip style="background: #fff; color: #6f707d;">
+          <ion-label>Hand-picked</ion-label>
+        </ion-chip> -->
+    <!-- <ion-chip style="background: #fff; color: #6f707d;">
+          <ion-label>Others</ion-label>
+        </ion-chip> -->
+  </div>
+  
+  
+  <div *ngFor="let data of sample">
+    
+  <h2 class="ion-margin-start">{{data.name}}</h2>
+      <ion-card>
+        <ion-card-content  class="ion-no-padding">
+          <ion-list lines="none">
+            <ion-item>
+              <img src="/assets/img5.jpg" alt="" slot="start">
+  
+              <ion-label>
+                <h4>product:{{data.product}}</h4>
+                <p>Brand name & category</p>
+                <ion-row>
+                  <ion-col size="6" style="  border-right: 2px solid #c7c7dc;">
+                    <h3>{{data.remaining}}</h3>
+                    <p>reamining</p>
+                  </ion-col>
+                  <ion-col size="6">
+                    <h3>{{data.total}}</h3>
+                    <p>total</p>
+                  </ion-col>
+                </ion-row>
+              </ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card >
+        <ion-card-content  class="ion-no-padding">
+          <ion-list lines="none">
+            <ion-item >
+              <img src="/assets/img5.jpg" alt="" slot="start">
+  
+              <ion-label>
+                <h4>product:{{data.product}}</h4>
+                <p>Brand name & category</p>
+                <ion-row>
+                  <ion-col size="6" >
+                    <h3 style="color:  #f60000;">{{data.remainings}}</h3>
+                    <p>reamining</p>
+                  </ion-col>
+                  <ion-col size="6">
+                    <h3>{{data.total}}</h3>
+                    <p>total</p>
+                  </ion-col>
+                </ion-row>
+              </ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
     </div>
 
-    <!-- ion-cards -->
-
-    <div *ngFor="let data of sample">
-      <ion-row>
-
-        <ion-col size="11">
-          <h2 class="ion-margin-start">{{data.name}}</h2>
-          <ion-card>
-            <ion-card-content class="ion-no-padding">
-              <ion-row>
-                <ion-col size="4">
-                  <img src="/assets/img5.jpg" alt="" class="ion-margin-top">
-                </ion-col>
-                <ion-col size="8" class="ion-padding-start">
-                  <h4>Product Name:{{ data.product}}</h4>
-                  <p>Brand Name.category</p>
-                  <ion-row class="ion-margin-top">
-                    <ion-col size="5" style="  border-right: 2px solid #c7c7dc;">
-                      <h3>{{ data.remaining}}</h3>
-                      <p>reamining</p>
-
-                    </ion-col>
-                    <ion-col size="7">
-                      <h3>{{ data.total}}</h3>
-                      <p>total</p>
-                    </ion-col>
-                  </ion-row>
-                </ion-col>
-              </ion-row>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-        <ion-col size="1">
-
-        </ion-col>
-      </ion-row>
-
-      <ion-row>
-        <ion-col size="11">
-          <ion-card>
-            <ion-card-content class="ion-no-padding">
-              <ion-row>
-                <ion-col size="4">
-                  <img src="/assets/img5.jpg" alt="" class="ion-margin-top">
-                </ion-col>
-                <ion-col size="8" class="ion-padding-start">
-                  <h4>Product Name:{{ data.product}}</h4>
-                  <p>Brand Name.category</p>
-                  <ion-row class="ion-margin-top">
-                    <ion-col size="6">
-                      <h3 style="color: #f60000;">{{data.remainings}}</h3>
-                      <p>reamining</p>
-                    </ion-col>
-                    <ion-col size="6">
-                      <h3>120</h3>
-                      <p>total</p>
-                    </ion-col>
-                  </ion-row>
-                </ion-col>
-              </ion-row>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-        <ion-col size="1">
-
-        </ion-col>
-      </ion-row>
-    </div>
-  </ion-grid>
 
 
-</ion-content>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-<ion-footer class="ion-no-border">
-
-  <ion-item-divider>
-  <ion-label>
-   Active products 
-    </ion-label>
-  </ion-item-divider>
-
-  <ion-item-divider>
-    <ion-label>
-      Inactive products
-    </ion-label>
-  </ion-item-divider>
-
-</ion-footer> -->
+ </ion-content>
