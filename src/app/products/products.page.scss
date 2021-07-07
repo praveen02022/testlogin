@@ -1,0 +1,60 @@
+p{
+    font-weight: 600;
+    color: #555555;
+    font-size:14px;
+  
+}
+div p{
+  font-weight: 600;
+  color: #555555;
+  font-size:12px; 
+}
+h2{
+    color: #1f1f1f;
+    font-size: 15px;
+    font-weight: 600;
+}
+h3{
+    color: #1a237e;
+    font-weight: 600;
+    font-size:20px;
+}
+h4{
+    color: #1a237e;
+    font-size:15px;  
+}
+
+  ion-icon {
+    font-size:20px;
+    color: #555555;
+  }
+
+
+  ion-item-divider ion-label{
+    font-weight: 600;
+    color: #1f1f1f;
+    font-size:14px;
+  }
+
+img{
+  
+    height: 80px;
+    object-fit: cover;
+    box-shadow: 2px 2px 6px 1px rgba(0,0,0,0.68);
+    border-radius: 20px;
+}
+ion-card{
+    background-color: #e2e2ec;
+    border-radius: 15px;
+}
+  ion-label{
+    font-weight: 600;
+  }
+
+  .btn{
+    border: none;
+    background-color: inherit;
+    font-size: 14px;
+    color: #1f1f1f;
+    text-decoration: underline;
+  }
