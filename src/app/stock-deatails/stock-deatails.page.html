@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar color='primary'>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">stock-deatails</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-no-padding">
+
+  <ion-item>
+    <ion-segment color="tertiary" value="favorite">
+      <ion-segment-button value="call">
+        <ion-fab-button size="small" color="light">1</ion-fab-button>
+        <ion-label style="font-size: 10px;">Basic details</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="favorite">
+        <ion-fab-button size="small" color="light">2</ion-fab-button>
+        <ion-label style="font-size: 10px;">Product info</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="map">
+        <ion-fab-button size="small" color="light">3</ion-fab-button>
+        <ion-label style="font-size: 10px;">payment info</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-item>
+
+
+
+
+
+  <form action="" class="ion-padding-start ion-padding-end ">
+
+
+    <div>
+      <h3>Please fill the details:</h3>
+      <p>*<span>Mandatory fileds</span></p>
+    </div>
+
+
+
+    <ion-item lines="none" class="ion-margin-bottom">
+      <ion-label position="floating">
+        stock id
+      </ion-label>
+      <ion-input placeholder="HSFHK1625"></ion-input>
+    </ion-item>
+
+
+
+    <ion-item lines="none" class="ion-margin-bottom">
+      <ion-label position="floating">
+        Vendor name*
+      </ion-label>
+      <ion-input placeholder="Name of the vendor"></ion-input>
+    </ion-item>
+
+
+    <ion-item lines="none" class="ion-margin-bottom">
+      <ion-label position="floating">
+        Prod category*
+      </ion-label>
+      <ion-input placeholder="HSFHK1625"></ion-input>
+    </ion-item>
+
+
+    <ion-item lines="none" class="ion-margin-bottom">
+      <ion-label position="floating">
+        Bought date*
+      </ion-label>
+      <ion-datetime value="" placeholder=""></ion-datetime>
+    </ion-item>
+
+    <ion-text>
+      <p style="text-decoration: underline; color: #1a237e;"> Mark as returned</p>
+    </ion-text>
+    <div class="center">
+      <ion-button shape="round" color="light"> Save</ion-button>
+      <ion-button shape="round" class="ion-margin-start">Next</ion-button>
+    </div>
+  </form>
+
+
+
+</ion-content>
+
+<!-- 
+<ion-footer class="ion-no-border" >
+  <ion-toolbar class="center">
+ 
+    <ion-button shape="round" color="light"> Save</ion-button>
+    <ion-button shape="round">Next</ion-button>
+  </ion-toolbar>
+</ion-footer> -->

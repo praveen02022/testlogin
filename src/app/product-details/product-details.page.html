@@ -1,0 +1,100 @@
+<ion-header>
+  <ion-toolbar color='primary'>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">product-details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding-start ion-padding-end">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="8">
+        <h3 style="color:#000a6e; font-weight: lighter; font-size: 14px;">Product Name</h3>
+        <p style="font-size: 11px; color: #6f707d; font-weight: 600;">Brand Name.Category.Sub category</p>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button shape="round" color="light" class="ion-margin-top"> edit</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+  <ion-card class="slide-card">
+    <ion-slides pager="true">
+      <ion-slide>
+        <div class="slide">
+          <img src="/assets/img5.jpg" alt="" style="height: 150px;">
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="slide">
+          <img src="/assets/img5.jpg" alt="" style="height: 150px;">
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="slide">
+          <img src="/assets/img5.jpg" alt="" style="height: 150px;">
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <img src="/assets/img5.jpg" alt="" style="height: 130px;">
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+
+
+  <div>
+    <ion-grid>
+      <ion-row>
+        <ion-card>
+          <ion-col size="7" class="ion-no-padding">
+            <ion-row>
+              <ion-col>
+                <h3 style="font-size: 20px; color: #000a6e; font-weight: 600; border-right: 2px solid #c7c7dc;">120</h3>
+                <p style="font-size: 12px; color: #6f707d;  font-weight: 600;">reamining</p>
+              </ion-col>
+              <ion-col>
+                <h3 style="font-size: 20px;  color: #000a6e; font-weight: 600;">120</h3>
+                <p style="font-size: 12px; color:#6f707d;  font-weight: 600;"> total</p>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-card>
+        <ion-col size="6">
+             barcode-scanner
+        </ion-col>
+      </ion-row>
+
+
+
+    </ion-grid>
+
+
+    <div class="ion-margin-start">
+      <p style="font-size: 12px;  color:#686b85; font-weight: 600;">Prod sku:
+        <span style="font-size: 12px;  color:#30446b; font-weight: 600;">HSFHK1625</span>
+      </p>
+
+      <p style="font-size: 12px;  color:#686b85; font-weight: 600;">Business id:
+        <span style="font-size: 12px;  color:#30446b; font-weight: 600;">HSFHK1625</span>
+      </p>
+      <p style="font-size: 12px;  color:#686b85; font-weight: 600;">Product discription:</p>
+      <p style="font-size: 12px;  color:#30446b; font-weight: 600;">The description of the product will be updated in
+        this
+        section. This says the description of a product that the
+        user has added if any.</p>
+    </div>
+  </div>
+
+  <div class="ion-margin-start">
+    <h4 tyle="font-size: 12px;  color:#1f1f1f; font-weight: 600;">Vidios</h4>
+    <video controls="controls" preload="metadata" autoplay="autoplay" webkit-playsinline="webkit-playsinline"
+      class="videoPlayer" style="width: 50%; height: 100px;">
+      <source src="./assets/videos/Part_1.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+</ion-content>
