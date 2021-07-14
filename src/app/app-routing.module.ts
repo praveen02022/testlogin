@@ -26,6 +26,11 @@ const routes: Routes = [
     path: 'product-details',
     loadChildren: () => import('./product-details/product-details.module').then( m => m.ProductDetailsPageModule)
   },
+  {
+    path: 'fincalz-crud',
+    loadChildren: () => import('./fincalz-crud/fincalz-crud.module').then( m => m.FincalzCrudPageModule)
+  },
+ 
 
 ];
 @NgModule({
