@@ -9,6 +9,15 @@ export class products {
   weight:number;
   measure:string;
   defaultRate:number
+  images:[]
+}
+
+export class stock {
+  $key: string;
+  purchaseid: string;
+  qty:number;
+  marginRate:string;
+  saleRate:number
 }
 
 
@@ -42,7 +51,36 @@ export class CrudService {
       }).catch(error => console.log(error));;
   }
 
+  
   delete(id: string) {
     this.ngFirestore.doc('productlist/' + id).delete();
+  }
+
+
+
+
+
+  //delete
+  createstock(stock: stock) {
+    return this.ngFirestore.collection('stock').add(stock);
+  }
+
+  getstocklists() {
+    return this.ngFirestore.collection('stock').snapshotChanges();
+  }
+  
+  getstocklist(id) {
+    return this.ngFirestore.collection('stock').doc(id).valueChanges();
+  }
+
+  updatestock(id, stock: stock) {
+    this.ngFirestore.collection('stock').doc(id).update(stock)
+      .then(() => {
+        this.router.navigate(['/stock-list']);
+      }).catch(error => console.log(error));;
+  }
+
+  deletestock(id: string) {
+    this.ngFirestore.doc('stock/' + id).delete();
   }
 }

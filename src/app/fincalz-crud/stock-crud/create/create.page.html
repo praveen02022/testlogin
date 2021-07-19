@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>create</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="stockForm" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">purchaseid</ion-label>
+      <ion-input formControlName="purchaseid" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">qty</ion-label>
+      <ion-input formControlName="qty" type="text" required>
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">marginRate</ion-label>
+      <ion-input formControlName="marginRate" type="text" required>
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">saleRate</ion-label>
+      <ion-input formControlName="saleRate" type="text" required>
+      </ion-input>
+    </ion-item>
+
+    <!-- <ion-item>
+      <ion-label position="floating">defaultRate</ion-label>
+      <ion-input formControlName="defaultRate" type="text" required>
+      </ion-input>
+    </ion-item>      -->
+    <ion-button class="ion-margin-top" type="submit" expand="block" color="success">Create</ion-button>
+  </form>
+</ion-content>

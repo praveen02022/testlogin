@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { FincalzCrudPage } from './fincalz-crud.page';
+import { StockCrudPage } from './stock-crud.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: FincalzCrudPage
+    component: StockCrudPage
   },
   {
     path: 'create',
@@ -19,10 +19,6 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: () => import('./list/list.module').then( m => m.ListPageModule)
-  },
-  {
-    path: 'stock-crud',
-    loadChildren: () => import('./stock-crud/stock-crud.module').then( m => m.StockCrudPageModule)
   }
 ];
 
@@ -30,4 +26,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class FincalzCrudPageRoutingModule {}
+export class StockCrudPageRoutingModule {}

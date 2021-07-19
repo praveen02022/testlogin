@@ -7,14 +7,18 @@
 <ion-content>
 
 <ion-list>
-  <ion-item *ngFor="let data of productlist" lines="full">
+  <ion-item *ngFor="let data of stocklist" lines="full">
     <ion-label>
-        <h2>ProductName</h2>
-        <h2>description</h2>
+        <h2>purchaseid</h2>
+        <h2>qty</h2>
+        <h2>marginRate</h2>
+        <h2>saleRate</h2>
       </ion-label>
       <ion-label>
-        <p>{{data.ProductName}}</p>
-        <p>{{data.description}}</p>
+        <p>{{data.purchaseid}}</p>
+        <p>{{data.qty}}</p>
+        <p>{{data.marginRate}}</p>
+        <p>{{data.saleRate}}</p>
       </ion-label>
       <div item-end>
         <button [routerLink]="['update/', data.id]">

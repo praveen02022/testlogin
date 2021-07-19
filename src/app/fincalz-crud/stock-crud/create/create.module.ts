@@ -7,9 +7,9 @@ import { IonicModule } from '@ionic/angular';
 import { CreatePageRoutingModule } from './create-routing.module';
 
 import { CreatePage } from './create.page';
-import { ReactiveFormsModule } from '@angular/forms';
 
-import { FileSizePipe } from '../..//file-size.pipe';
+
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   imports: [
     CommonModule,
@@ -18,6 +18,6 @@ import { FileSizePipe } from '../..//file-size.pipe';
     IonicModule,
     CreatePageRoutingModule
   ],
-  declarations: [CreatePage,FileSizePipe]
+  declarations: [CreatePage]
 })
 export class CreatePageModule {}

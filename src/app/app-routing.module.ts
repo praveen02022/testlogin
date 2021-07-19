@@ -30,6 +30,10 @@ const routes: Routes = [
     path: 'fincalz-crud',
     loadChildren: () => import('./fincalz-crud/fincalz-crud.module').then( m => m.FincalzCrudPageModule)
   },
+  {
+    path: 'img-upload',
+    loadChildren: () => import('./img-upload/img-upload.module').then( m => m.ImgUploadPageModule)
+  },
  
 
 ];
